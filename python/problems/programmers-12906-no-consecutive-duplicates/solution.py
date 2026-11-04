@@ -1,2 +1,13 @@
 def solution(arr):
-    raise NotImplementedError("프로그래머스에서 푼 코드를 여기에 기록해요.")
+    answer = []
+    # [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+    for i in range(0, len(arr)):
+        if i == 0:
+            answer.append(arr[i])
+        else:
+            if tmp == arr[i]:
+                continue
+            else:
+                answer.append(arr[i])
+        tmp = arr[i]
+    return answer

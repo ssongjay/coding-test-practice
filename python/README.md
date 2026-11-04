@@ -11,8 +11,9 @@ Python으로 풀 문제를 독립적으로 모으는 자리다. Kotlin 쪽 문�
 | 1 | [짝수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/120831?language=python3) | 반복·조건·누적 | [120831](problems/programmers-120831-even-sum/README.md) |
 | 2 | [배열 원소의 길이](https://school.programmers.co.kr/learn/courses/30/lessons/120854?language=python3) | 문자열·리스트 | [120854](problems/programmers-120854-element-lengths/README.md) |
 | 3 | [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906?language=python3) | 리스트의 조건 처리 | [12906](problems/programmers-12906-no-consecutive-duplicates/README.md) |
+| 4 | [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=python3) | 중복·자료구조 선택 | [42576](problems/programmers-42576-unfinished-runner/README.md) |
 
-처음 두 문제로 문법 감각을 확인한 뒤 속도와 막히는 부분에 맞춰 다음 문제를 조절한다. 11/4 짝수의 합과 배열 원소의 길이 모두 제출 100점을 확인했다. 다음 시작점은 같은 숫자는 싫어이며, 3번의 풀이·제출 결과는 아직 없다.
+처음 두 문제로 문법 감각을 확인한 뒤 속도와 막히는 부분에 맞춰 다음 문제를 조절한다. 11/4 첫 세 문제의 제출 100점을 확인했다. 같은 숫자는 싫어는 효율성 테스트도 통과했다. 다음 시작점은 완주하지 못한 선수이며 아직 풀이·제출 결과는 없다.
 
 ## 풀이 기록 흐름
 
