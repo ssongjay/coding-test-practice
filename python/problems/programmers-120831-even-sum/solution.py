@@ -1,2 +1,7 @@
 def solution(n):
-    raise NotImplementedError("프로그래머스에서 푼 코드를 여기에 기록해요.")
+    answer = 0
+
+    for i in range(n + 1):
+        if i % 2 == 0:
+            answer += i
+    return answer
