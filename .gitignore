@@ -1,0 +1,28 @@
+# Build output and local IDE state
+.gradle/
+.kotlin/
+build/
+**/build/
+.idea/
+*.iml
+*.class
+*.jar
+!kotlin/gradle/wrapper/gradle-wrapper.jar
+.DS_Store
+
+# Local configuration
+.env
+.env.*
+!.env.example
+local.properties
+
+# Future Python solutions
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Agent runtime state
+.omx/
+.omc/

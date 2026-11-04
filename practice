@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root=$(cd "$(dirname "$0")" && pwd)
+
+usage() {
+    cat <<'USAGE'
+사용법: ./practice <kotlin|python> <문제 폴더> <run|check|build>
+
+예제 실행: ./practice kotlin 001-count-at-least run
+사례 검증: ./practice kotlin 001-count-at-least check
+컴파일만: ./practice kotlin 002-sum-at-least build
+
+Python 풀이를 추가한 뒤:
+  ./practice python 001-example run
+  ./practice python 001-example check
+USAGE
+}
+
+if [[ ${1:-} == "--help" || ${1:-} == "-h" ]]; then
+    usage
+    exit 0
+fi
+if [[ $# -ne 3 ]]; then
+    usage >&2
+    exit 2
+fi
+
+language=$1
+problem=$2
+action=$3
+
+if [[ ! "$problem" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]; then
+    printf '잘못된 문제 이름: %s\n' "$problem" >&2
+    exit 2
+fi
+case "$action" in
+    run|check|build) ;;
+    *) usage >&2; exit 2 ;;
+esac
+
+problem_directory="$repo_root/$language/problems/$problem"
+
+case "$language" in
+    kotlin)
+        if [[ ! -f "$problem_directory/Solution.kt" ]]; then
+            printf 'Kotlin 답안이 없어요: kotlin/problems/%s/Solution.kt\n' "$problem" >&2
+            exit 2
+        fi
+
+        # Reuse a local JDK without changing the user's shell configuration.
+        if [[ -z ${JAVA_HOME:-} ]]; then
+            detected_java_home=""
+            if [[ -x /usr/libexec/java_home ]]; then
+                detected_java_home=$(/usr/libexec/java_home -v 17 2>/dev/null || true)
+            fi
+            if [[ -z "$detected_java_home" ]] && command -v brew >/dev/null 2>&1; then
+                java_prefix=$(brew --prefix openjdk@17 2>/dev/null || true)
+                if [[ -n "$java_prefix" && -x "$java_prefix/libexec/openjdk.jdk/Contents/Home/bin/java" ]]; then
+                    detected_java_home="$java_prefix/libexec/openjdk.jdk/Contents/Home"
+                fi
+            fi
+            if [[ -n "$detected_java_home" ]]; then
+                export JAVA_HOME="$detected_java_home"
+            fi
+        fi
+
+        case "$action" in
+            run) task=runSolution ;;
+            check) task=checkSolution ;;
+            build) task=classes ;;
+        esac
+        exec "$repo_root/kotlin/gradlew" --project-dir "$repo_root/kotlin" --console=plain --quiet \
+            "-Pproblem=$problem" "$task"
+        ;;
+    python)
+        case "$action" in
+            run) entry=run.py ;;
+            check) entry=check.py ;;
+            build)
+                printf 'Python은 별도 빌드 없이 run 또는 check로 실행하세요.\n' >&2
+                exit 2
+                ;;
+        esac
+        if [[ ! -f "$problem_directory/$entry" ]]; then
+            printf 'Python 풀이를 먼저 추가하세요: python/problems/%s/%s\n' "$problem" "$entry" >&2
+            exit 2
+        fi
+        exec python3 "$problem_directory/$entry"
+        ;;
+    *) usage >&2; exit 2 ;;
+esac
