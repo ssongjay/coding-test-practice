@@ -1,8 +1,21 @@
 # coding-test-practice
 
-언어별로 분리해 관리하는 코딩테스트 연습 기록. Kotlin으로 시작하고, Python 문제는 별도로 추가한다. 두 언어의 문제를 같은 번호나 내용으로 맞출 필요는 없다.
+언어별로 분리해 관리하는 코딩테스트 연습 기록. 현재는 Python 기본 문법을 복습하고 있다. Kotlin과 Python의 문제는 독립적으로 관리한다.
 
 ## 시작하기
+
+### Python 연습
+
+Python 3이 있으면 별도 빌드 없이 실행할 수 있다. [첫 문제](python/problems/001-sum-at-least/README.md)를 읽고 같은 폴더의 `solution.py`를 작성한다.
+
+```sh
+./practice python 001-sum-at-least run
+./practice python 001-sum-at-least check
+```
+
+첫 문제의 답안은 비워뒀다. 작성 전 실행하면 미구현 오류가 나며, 완성한 뒤 `check`로 여섯 사례를 확인한다.
+
+### Kotlin 연습
 
 Kotlin 실행에는 JDK 17이 필요하다. Gradle과 Kotlin 컴파일러는 Wrapper가 준비하므로 별도로 설치할 필요가 없다. 첫 실행에는 다운로드를 위한 인터넷 연결이 필요할 수 있다.
 
@@ -43,7 +56,13 @@ kotlin/
       Main.kt
       Check.kt
 python/
-  README.md              # 별도의 Python 문제를 추가하는 방법
+  README.md
+  problems/
+    001-sum-at-least/
+      README.md
+      solution.py
+      run.py
+      check.py
 practice                 # 언어·문제·실행 방식을 선택하는 명령
 ```
 
@@ -51,7 +70,7 @@ practice                 # 언어·문제·실행 방식을 선택하는 명령
 |---|---|---|
 | Kotlin | [001 — 기준값 이상인 숫자의 개수](kotlin/problems/001-count-at-least/README.md) | 함께 문법을 확인한 예제 |
 | Kotlin | [002 — 기준값 이상인 숫자의 합](kotlin/problems/002-sum-at-least/README.md) | 직접 구현 전 |
-| Python | [추가 방법](python/README.md) | 아직 문제 없음 |
+| Python | [001 — 기준값 이상인 숫자의 합](python/problems/001-sum-at-least/README.md) | 직접 구현 전 |
 
 현재 문제들은 직접 만든 연습용이며 특정 회사의 기출이 아니다. 새 문제는 각 언어의 `problems/<번호-이름>/`에 추가한다. 문제 이름은 영문 소문자·숫자·하이픈을 사용한다.
 

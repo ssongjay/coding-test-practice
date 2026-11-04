@@ -11,9 +11,9 @@ usage() {
 사례 검증: ./practice kotlin 001-count-at-least check
 컴파일만: ./practice kotlin 002-sum-at-least build
 
-Python 풀이를 추가한 뒤:
-  ./practice python 001-example run
-  ./practice python 001-example check
+Python 연습:
+  ./practice python 001-sum-at-least run
+  ./practice python 001-sum-at-least check
 USAGE
 }
 
