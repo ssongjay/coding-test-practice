@@ -6,7 +6,7 @@
 
 ### Python 연습
 
-프로그래머스에서 문제를 풀고, 작성한 코드와 풀이 기록을 GitHub에 정리한다. [짝수의 합](python/problems/programmers-120831-even-sum/README.md)을 완료했고, 다음은 [배열 원소의 길이](https://school.programmers.co.kr/learn/courses/30/lessons/120854?language=python3)다. [Python 문제 목록](python/README.md) 순서대로 진행한다.
+프로그래머스에서 문제를 풀고, 작성한 코드와 풀이 기록을 GitHub에 정리한다. 짝수의 합과 배열 원소의 길이를 완료했고, 다음은 [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906?language=python3)다. [Python 문제 목록](python/README.md) 순서대로 진행한다.
 
 ```sh
 ./practice python programmers-120831-even-sum run
@@ -72,8 +72,8 @@ practice                 # 언어·문제·실행 방식을 선택하는 명령
 | Kotlin | [002 — 기준값 이상인 숫자의 합](kotlin/problems/002-sum-at-least/README.md) | 직접 구현 전 |
 | Python | [001 — 기준값 이상인 숫자의 합](python/problems/001-sum-at-least/README.md) | 직접 구현 전 |
 | Python | [프로그래머스 — 짝수의 합](python/problems/programmers-120831-even-sum/README.md) | 제출 100점 확인 |
-| Python | [프로그래머스 — 배열 원소의 길이](python/problems/programmers-120854-element-lengths/README.md) | 다음 문제 |
-| Python | [프로그래머스 — 같은 숫자는 싫어](python/problems/programmers-12906-no-consecutive-duplicates/README.md) | 이후 문제 |
+| Python | [프로그래머스 — 배열 원소의 길이](python/problems/programmers-120854-element-lengths/README.md) | 제출 100점 확인 |
+| Python | [프로그래머스 — 같은 숫자는 싫어](python/problems/programmers-12906-no-consecutive-duplicates/README.md) | 다음 문제 |
 
 자체 연습 문제와 출처를 표시한 프로그래머스 문제를 함께 보관한다. 새 문제는 각 언어의 `problems/<번호-이름>/`에 추가한다. 문제 이름은 영문 소문자·숫자·하이픈을 사용한다.
 
