@@ -1,0 +1,32 @@
+# 프로그래머스 12906 — 같은 숫자는 싫어
+
+- 원문: [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906?language=python3)
+- 언어: Python 3
+- 복습 주제: 리스트·조건 처리·입력 크기
+
+## 짧은 문제 요약
+
+연속해서 반복되는 값들을 한 개씩 남기며 원래의 나열 순서를 보존한다.
+
+전체 조건·제한·공식 예시는 원문에서 확인한다. 이 기록은 다시 찾기 위한 짧은 요약이며 원문 전체를 옮기지 않는다.
+
+## 풀이와 검증
+
+`solution.py`는 직접 푼 코드를 기록하는 자리다. 아직 정답을 채우지 않았다. `run.py`와 `check.py`의 입력은 로컬 검증용으로 구성했다.
+
+```sh
+./practice python programmers-12906-no-consecutive-duplicates run
+./practice python programmers-12906-no-consecutive-duplicates check
+```
+
+답안을 작성하기 전에는 미구현 오류로 종료된다. 로컬 사례 통과와 프로그래머스 제출 통과는 따로 기록한다.
+
+## 풀이 기록
+
+- 상태: 미시작
+- 최초 풀이 시간: 미기록
+- 힌트 사용: 미기록
+- 프로그래머스 제출 결과: 미확인
+- 로컬 검증 결과: 답안 미구현
+- 막혔던 문법·조건: 풀이 후 기록
+- 다음 복습에서 확인할 점: 풀이 후 기록

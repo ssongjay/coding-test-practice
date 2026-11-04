@@ -6,14 +6,14 @@
 
 ### Python 연습
 
-Python 3이 있으면 별도 빌드 없이 실행할 수 있다. [첫 문제](python/problems/001-sum-at-least/README.md)를 읽고 같은 폴더의 `solution.py`를 작성한다.
+프로그래머스에서 문제를 풀고, 작성한 코드와 풀이 기록을 GitHub에 정리한다. 첫 문제는 [짝수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/120831?language=python3)이다. [Python 문제 목록](python/README.md) 순서대로 진행한다.
 
 ```sh
-./practice python 001-sum-at-least run
-./practice python 001-sum-at-least check
+./practice python programmers-120831-even-sum run
+./practice python programmers-120831-even-sum check
 ```
 
-첫 문제의 답안은 비워뒀다. 작성 전 실행하면 미구현 오류가 나며, 완성한 뒤 `check`로 여섯 사례를 확인한다.
+프로그래머스에서 푼 코드를 해당 문제 폴더의 `solution.py`에 기록하고 로컬 사례도 확인한다. 답안 작성 전에는 미구현 오류가 난다. 로컬 검증 결과와 플랫폼 제출 결과를 구분하고, 풀이 후 변경은 커밋·푸시한다.
 
 ### Kotlin 연습
 
@@ -71,8 +71,11 @@ practice                 # 언어·문제·실행 방식을 선택하는 명령
 | Kotlin | [001 — 기준값 이상인 숫자의 개수](kotlin/problems/001-count-at-least/README.md) | 함께 문법을 확인한 예제 |
 | Kotlin | [002 — 기준값 이상인 숫자의 합](kotlin/problems/002-sum-at-least/README.md) | 직접 구현 전 |
 | Python | [001 — 기준값 이상인 숫자의 합](python/problems/001-sum-at-least/README.md) | 직접 구현 전 |
+| Python | [프로그래머스 — 짝수의 합](python/problems/programmers-120831-even-sum/README.md) | 현재 시작점 |
+| Python | [프로그래머스 — 배열 원소의 길이](python/problems/programmers-120854-element-lengths/README.md) | 다음 문제 |
+| Python | [프로그래머스 — 같은 숫자는 싫어](python/problems/programmers-12906-no-consecutive-duplicates/README.md) | 이후 문제 |
 
-현재 문제들은 직접 만든 연습용이며 특정 회사의 기출이 아니다. 새 문제는 각 언어의 `problems/<번호-이름>/`에 추가한다. 문제 이름은 영문 소문자·숫자·하이픈을 사용한다.
+자체 연습 문제와 출처를 표시한 프로그래머스 문제를 함께 보관한다. 새 문제는 각 언어의 `problems/<번호-이름>/`에 추가한다. 문제 이름은 영문 소문자·숫자·하이픈을 사용한다.
 
 ## 실행과 검증의 차이
 
