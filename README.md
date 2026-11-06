@@ -75,6 +75,7 @@ practice                 # 언어·문제·실행 방식을 선택하는 명령
 | Python | [프로그래머스 — 배열 원소의 길이](python/problems/programmers-120854-element-lengths/README.md) | 제출 100점 확인 |
 | Python | [프로그래머스 — 같은 숫자는 싫어](python/problems/programmers-12906-no-consecutive-duplicates/README.md) | 정확성·효율성 100점 확인 |
 | Python | [프로그래머스 — 완주하지 못한 선수](python/problems/programmers-42576-unfinished-runner/README.md) | 정확성·효율성 100점 확인 · 힌트 후 완성 |
+| Python | [토스 NEXT 2022 — 멋쟁이 숫자](python/problems/toss-next-2022-cool-number/README.md) | 로컬 12개 통과 · 플랫폼 미제출 |
 
 자체 연습 문제와 출처를 표시한 프로그래머스 문제를 함께 보관한다. 새 문제는 각 언어의 `problems/<번호-이름>/`에 추가한다. 문제 이름은 영문 소문자·숫자·하이픈을 사용한다.
 
