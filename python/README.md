@@ -13,7 +13,7 @@ Python으로 풀 문제를 독립적으로 모으는 자리다. Kotlin 쪽 문�
 | 3 | [같은 숫자는 싫어](https://school.programmers.co.kr/learn/courses/30/lessons/12906?language=python3) | 리스트의 조건 처리 | [12906](problems/programmers-12906-no-consecutive-duplicates/README.md) |
 | 4 | [완주하지 못한 선수](https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=python3) | 중복·자료구조 선택 | [42576](problems/programmers-42576-unfinished-runner/README.md) |
 
-처음 두 문제로 문법 감각을 확인한 뒤 속도와 막히는 부분에 맞춰 다음 문제를 조절한다. 11/4 첫 세 문제의 제출 100점을 확인했다. 같은 숫자는 싫어는 효율성 테스트도 통과했다. 다음 시작점은 완주하지 못한 선수이며 아직 풀이·제출 결과는 없다.
+처음 두 문제로 문법 감각을 확인한 뒤 속도와 막히는 부분에 맞춰 다음 문제를 조절한다. 11/4 첫 세 문제의 제출 100점을 확인했다. 같은 숫자는 싫어는 효율성 테스트도 통과했다. 11/6 완주하지 못한 선수도 정확성 7개·효율성 5개, 100점을 확인했다. 최초 리스트 삭제 풀이의 시간 초과 후 딕셔너리 접근·문법·반환 조건에 대한 힌트를 받아 완성했다. 해당 문제 기록에서 O(n²)과 평균 O(n)의 차이, 동명이인 처리, 딕셔너리 문법을 복습한다.
 
 ## 풀이 기록 흐름
 

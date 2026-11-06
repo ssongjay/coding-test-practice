@@ -1,2 +1,16 @@
 def solution(participant, completion):
-    raise NotImplementedError("프로그래머스에서 직접 푼 코드를 기록해요.")
+    answer = ''
+
+    counts = {}
+    for i in participant:
+        if i in counts:
+            counts[i] += 1
+        else:
+            counts[i] = 1
+
+    for i in completion:
+        counts[i] -= 1
+
+    for i in counts:
+        if counts[i] == 1:
+            return i
